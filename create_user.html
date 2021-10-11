@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Create User</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <form class="registration" id="regForm" action="/main.html" onsubmit="submitForm(event)">
+                <h1 class="title">Create User</h1>
+                <div class="formInput">
+                    <input type="text" class="form-input" autofocus placeholder="First Name" id="fname">
+                </div>
+                <div class="formInput">
+                    <input type="text" class="form-input" autofocus placeholder="Last Name" id="lname">
+                </div>
+                <div class="formInput">
+                    <input type="text" class="form-input" autofocus placeholder="Email Address" id="email">
+                </div>
+                <div class="formInput">
+                    <input type="password" class="form-input" autofocus placeholder="Password" id="pass">
+                </div>
+                <!-- <div class="formInput">
+                    <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                </div> -->
+                <div class="formInput">
+                    <input class="form-input" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" autofocus placeholder="Date of Birth" id="dob">
+                </div>
+                <div class="formInput">
+                    <input type="text" class="form-input" autofocus placeholder="Gender" list="gendername" id="gender">
+                        <datalist id="gendername">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Others">
+                        </datalist>
+                </div>
+                <div class="formInput">
+                    <input type="text" class="form-input" autofocus placeholder="Phone Number" id="phn">
+                </div>
+                <button class="form-button" type="submit" id="btnSubmit">Submit</button>
+                <div class="formText">
+                    <p class="form-text">
+                        <a class="form-link" href="main.html" id="linkHome">Return to home page</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <script src="./isaa-backend/app.js"></script>
+        <!-- <script type="module" src="js/service/FetchService.js"></script> -->
+        <!-- <script type="text/javascript" src="./isaa-backend/requests.js"></script> -->
+        <!-- <script>
+            function addUser(event){
+                event.preventDefault();
+                const formData = {
+                    T_name: document.getElementById('fname').value+document.getElementById('lname').value,
+                    T_email: document.getElementById('email').value,
+                    password: document.getElementById('pass').value,
+                    T_dob: document.getElementById('dob').value,
+                    T_gender: document.getElementById('gender').value,
+                    T_phone: document.getElementById('phn').value
+                }
+                console.log(formData.T_name);
+            }
+        </script> -->
+        
+            <!-- // async function submitForm(e){
+            //     e.preventDefault();
+                
+            //     const formData = {
+            //         T_name: document.getElementById('fname').value+document.getElementById('lname').value,
+            //         T_email: document.getElementById('email').value,
+            //         password: document.getElementById('pass').value,
+            //         T_dob: document.getElementById('dob').value,
+            //         T_gender: document.getElementById('gender').value,
+            //         T_phone: document.getElementById('phn').value
+            //     }
+            //     console.log(formData);
+
+            //     const headers = buildHeaders();
+            //     const response = await performPostHttpRequest(`http://localhost:5000/adduser`, headers, formData); 
+            //     //JSON Placeholder
+            //     console.log(response);
+            //     if(response)
+            //         alert("Successful!");
+            //     else
+            //         alert("Error occured!")
+            // }
+            // function buildHeaders(authorization = null) {
+            //     const headers = {
+            //         "Content-Type": "application/json",
+            //         "Authorization": (authorization) ? authorization : "Bearer TOKEN_MISSING"
+            //     };
+            //     return headers;
+            // }
+            // async function performPostHttpRequest(fetchLink, headers, body) {
+            //     if(!fetchLink || !headers || !body) {
+            //         throw new Error("One or more POST request parameters was not passed.");
+            //     }
+            //     try {
+            //         const rawResponse = await fetch(fetchLink, {
+            //             method: "POST",
+            //             headers: headers,
+            //             body: body
+            //         });
+            //         const content = await rawResponse.json();
+            //         return content;
+            //     }
+            //     catch(err) {
+            //         console.error(`Error at fetch POST: ${err}`);
+            //         throw err;
+            //     }
+            // } -->
+        
+    </body>
+</html>

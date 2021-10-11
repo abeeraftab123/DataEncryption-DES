@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <span style="font-weight: 700; font-size: 1rem;">Workshop Registration</span>
+    </nav>
+    <div style="display: flex; justify-content: center; padding: 2em;">
+        <div style="background-color: white; width: 100%; padding: 1em; border: none;">
+            <form class="mm" action="" method="POST">
+                <div class="container">  
+                    <div class="left">
+                        <div class="flex mb-20">
+                            <label for="fname">First Name <span class="required">*</span></label>
+                            <div class="input">
+                                <input placeholder="First Name" type="text" name="FirstName" id="fname" class="input-width" size="12" required />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="lname">Last Name <span class="required">*</span></label>
+                            <div class="input">
+                                <input placeholder="Last Name" type="text" name="LastName" id="lname" class="input-width" size="12" required />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="institution">Company/Institution <span class="required">*</span></label>
+                            <div class="input">
+                                <input placeholder="Institution" type="text" name="institution" id="institution" class="input-width" size="12" required />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="address">Address <span class="required">*</span></label>
+                            <div class="input">
+                                <textarea placeholder="Address" type="text" name="address" id="address" class="input-width" rows="8" style="resize: none;" required></textarea>
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="city">City</label>
+                            <div class="input">
+                                <input placeholder="City" type="text" name="city" id="city" class="input-width" size="12" />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="state">State/Province/Region</label>
+                            <div class="input">
+                                <select id="state" name="state" class="input-width">
+                                    <option value="">-------Select-------</option>
+                                    <option value="RAJ">Rajasthan</option>
+                                    <option value="TN">Tamil Nadu</option>
+                                    <option value="DEL">Delhi</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="country">Country</label>
+                            <div class="input">
+                                <select id="country" name="country" class="input-width">
+                                    <option value="">-------Select-------</option>
+                                    <option value="IND">India</option>
+                                    <option value="ENG">England</option>
+                                    <option value="USA">USA</option>
+                                  </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="flex mb-20">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <div class="input">
+                                <input placeholder="Enter e-mail address" type="text" name="email" id="email" class="input-width" size="12" required />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <div class="input">
+                                <input placeholder="Enter Phone Number" type="text" name="phone" id="phone" class="input-width" size="12" required />
+                            </div>
+                        </div>
+                        <div class="flex mb-20">
+                            <span style=" font-weight: 700;">Gender<span class="required">*</span></span>
+                            <div class="input" style="margin-right: 220px;">
+                                <input type="radio" name="exp" id="exp1" />
+                                <label for="mem" style="font-weight: 500;"> Male</label><br>
+                                <input type="radio" name="exp" id="exp2" />
+                                <label for="fem" style="font-weight: 500;"> Female</label><br>
+                                <input type="radio" name="exp" id="exp3" />
+                                <label for="oth" style="font-weight: 500;"> Other</label><br>
+                            </div>
+                        </div>                        
+                        <div class="flex mb-20">
+                            <iframe width="420" height="200" frameBorder="0" src="https://www.youtube.com/embed/9YffrCViTVk"></iframe>
+                        </div>  
+                        <a href="#" style="text-decoration: dotted; color: #b691fc; font-weight: 600;">Click here to visit our website</a>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="reset" class="button">Reset</button>
+                    <div style="width: 10px;"></div>
+                    <button class="button">Register</button>
+                </div>
+        
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>

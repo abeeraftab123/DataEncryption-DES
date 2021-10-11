@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2 style="background-color: aquamarine;">Workshop Registration</h2>
+<u>Register Now while Seats are Available!</u>
+<div class="row">
+  <div class="column">
+    
+    <form action="/action_page.php">
+        <label for="fname"><b>First name:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b></label>
+        <input type="text" id="fname" name="fname" value="Abeer"><br><br>
+        <label for="lname"><b>Last name:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;</b></label>
+        <input type="text" id="lname" name="lname" value="Aftab"><br><br>
+        <label for="company"><b>Company/Institution:<sup>*</sup>&nbsp;</b></label>
+        <input type="text" id="company" name="company" value="VIT"><br><br>
+        
+        <label for="textarea"><b>Address:&nbsp;<sup>*</sup></label><br><br>
+        <textarea id="textarea" cols="30" rows="10" placeholder="Type your address..."></textarea><br><br>
+
+        <label for="city"><b>City:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b></label>
+        <input type="text" id="city" name="city" value="City"><br><br>
+
+        <label for="state">State/Province/Region:<sup>*</sup>&ensp;&ensp;&ensp;&nbsp;</label>
+        <select id="state" name="state">
+          <option value="">-------Select-------</option>
+          <option value="RAJ">Rajasthan</option>
+          <option value="TN">Tamil Nadu</option>
+          <option value="DEL">Delhi</option>
+        </select><br><br>
+
+        <label for="country">Country:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
+        <select id="country" name="country">
+          <option value="">-------Select-------</option>
+          <option value="IND">India</option>
+          <option value="ENG">England</option>
+          <option value="USA">USA</option>
+        </select><br><br>
+
+        <label for="Email"><b>Email:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</b></label>
+        <input type="text" id="Email" name="Email" value="Email"><br><br>
+
+        <label for="Phone Number"><b>Phone Number:<sup>*</sup>&ensp;&ensp;&ensp;&ensp;&ensp;</b></label>
+        <input type="text" id="Phone Number" name="Phone Number" value="Phone Number"><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    
+    
+  </div>
+  <div class="column">
+    <u>Lunch</u><br><br>
+    <label for="Meal">Meal Preference:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
+        <select id="Meal" name="Meal">
+          <option value="V">-------Vegetarian-------</option>
+          <option value="NV">Non Vegetarian</option>
+        </select><br><br>
+    <u>Payment Details</u><br><br>
+
+    <label for="pay">Payment Mode:</label><br><br>
+    <input type="radio" id="male" name="pay">
+    <label for="cash">Cash</label><br>
+    <input type="radio" id="female" name="pay">
+    <label for="cheque">Cheque</label><br>
+    <input type="radio" id="other" name="pay">
+    <label for="demand">Demand Draft</label><br><br>
+    
+    <label for="dd"><b>DD/Cheque No.:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;</b></label>
+    <input type="text" id="dd" name="dd" value=""><br><br>
+    <label for="bn"><b>Drawn on (Bank Name):&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;</b></label>
+    <input type="text" id="bn" name="bn" value=""><br><br>
+    <label for="Payable at"><b>Payable at:&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;</b></label>
+    <input type="text" id="Payable at" name="Payable at" value=""><br><br>
+</form> 
+
+  </div>
+</div>
+
+</body>
+</html>

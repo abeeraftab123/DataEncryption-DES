@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>View Details</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <div class="container">
+            <form class="registration" id="regForm" onsubmit="return submitForm(e);">
+                <h1 class="title">View Details</h1>
+                <div class="formInput">
+                    <span class="form-input"><b>Name:</b> <%= result.T_name.slice(1,result.T_name.length-1) %></span>
+                </div>
+                <div class="formInput">
+                    <span class="form-input"><b>Email:</b> <%= result.T_email.slice(1,result.T_email.length-1) %></span>    
+                </div>
+                <div class="formInput">
+                    <span class="form-input"><b>DOB:</b> <%= result.T_dob.slice(1,result.T_dob.length-1) %></span>    
+                </div>
+                <div class="formInput">
+                    <span class="form-input"><b>Gender:</b> <%= result.T_gender.slice(1,result.T_gender.length-1) %></span>    
+                </div>
+                <div class="formInput">
+                        <span class="form-input"><b>Phone No: </b><%= result.T_phone.slice(1,result.T_phone.length-1) %></span>
+                    <datalist id="gendername">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Others">
+                        </datalist>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <a href="/edit/<%= id %>" class="form-button" style="width: 30% !important; text-align: center !important;" id="btnSubmit">Edit</a>
+                    <a href="/deleteuser/<%= id %>" class="form-button" style="width: 30%; background-color: #ff0040; text-align: center;" type="submit" id="btnSubmit">Delete</a>
+                </div>
+            </form>
+        </div>
+
+            
+
+
+            
+        </div>
+    </body>
+</html>
